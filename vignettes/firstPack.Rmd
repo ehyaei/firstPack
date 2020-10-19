@@ -1,0 +1,30 @@
+---
+title: "Simulate Brownian motion"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Simulate Brownian motion}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The [firstPack package](https://github.com/ehyaei/simBrM) was written to illustrate R package construction.
+
+It has just two functions. `simBrM()` to simulate Brownian motion.
+
+```{r load_and_sim}
+library(firstPack)
+x <- simBrM(1000)
+```
+
+Plus `plotBrM()` to plot the result.
+
+```{r plot}
+plotBrM(x)
+```
